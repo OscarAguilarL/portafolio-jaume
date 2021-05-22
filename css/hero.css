@@ -2,8 +2,13 @@
   padding-block-start: 1rem;
 }
 
-.hero .hero-img {
+.hero-img {
   text-align: center;
+}
+
+.hero-img img {
+  max-inline-size: 100%;
+  block-size: auto;
 }
 
 .hero h1 {
@@ -24,4 +29,29 @@
 
 .hero-social {
   padding-block-end: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .hero-description {
+    order: 1;
+    max-inline-size: 450px;
+  }
+
+  .hero-img {
+    order: 2;
+    text-align: end;
+    flex: 1;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-img img {
+    inline-size: 500px;
+    block-size: 504px;
+  }
 }
