@@ -1,3 +1,8 @@
+@import "./button.css";
+@import "./button-icon.css";
+@import "./header.css";
+@import "./hero.css";
+
 :root {
   --fontBase: "Poppins", sans-serif;
   --headline1: bold 5.9375rem/9.6068754196167rem var(--fontBase);
@@ -23,30 +28,6 @@
 body {
   background: var(--gradient);
   min-block-size: 100vh;
-  font-family: var(--body1);
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-}
-
-h1 {
-  font: var(--headline1);
-}
-
-h2 {
-  font: var(--headline2);
-}
-
-h3 {
-  font: var(--headline3);
-}
-
-h4 {
-  font: var(--headline4);
-}
-
-h5 {
-  font: var(--headline5);
+  font: var(--body1);
+  color: var(--purple);
 }
