@@ -23,11 +23,11 @@
 
   .project-description {
     flex: 1;
+    flex: 1;
+    text-align: center;
   }
 
   .project:nth-of-type(5) .project-img {
     order: 2;
-    flex: 1;
-    text-align: center;
   }
 }
