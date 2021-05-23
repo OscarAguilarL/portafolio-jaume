@@ -18,25 +18,29 @@
     <title>Portafolio Jaume</title>
   </head>
   <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header-content">
+          <img
+            src="./img/logo.png"
+            alt="Logotipo de Jaume"
+            width="70"
+            height="20"
+          />
+          <nav class="menu" aria-label="main-navigation">
+            <ul>
+              <li><a class="is-current" href="#main">Hola</a></li>
+              <li><a href="#proyectos">Proyectos</a></li>
+              <li><a href="#hablemos">Hablemos</a></li>
+            </ul>
+          </nav>
+          <button class="btn">Currículum</button>
+        </div>
+      </div>
+    </header>
     <div class="wrapper">
-      <header class="header">
-        <img
-          src="./img/logo.png"
-          alt="Logotipo de Jaume"
-          width="70"
-          height="20"
-        />
-        <nav class="menu">
-          <ul>
-            <li><a class="is-current" href="#main">Hola</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#hablemos">Hablemos</a></li>
-          </ul>
-        </nav>
-        <button class="btn">Currículum</button>
-      </header>
 
-      <section class="hero" id="main">
+      <section aria-label="main" class="hero" id="main">
         <div class="hero-img">
           <picture>
             <source media="(min-width: 768px)" srcset="./img/user-2x.png" />
@@ -52,7 +56,7 @@
             Frontend Developer que le encanta implementar diseños que inspiran y
             atraen a las personas.
           </p>
-          <div class="hero-social">
+          <div class="social">
             <a href="tel:1234567890" class="btn-icon">
               <img src="./img/icons/icon-phone.svg" class="icon-phone" />
             </a>
@@ -81,13 +85,13 @@
         <img src="./img/icons/arrow-down.svg" alt="" />
       </section>
 
-      <section class="testimony">
-        <div class="testimony-img">
+      <section class="project" id="proyectos">
+        <div class="project-img">
           <img src="./img/proyecto-1.png" alt="" />
         </div>
 
-        <div class="testimony-description">
-          <h5 class="testimony-title">leonidasesteban.com</h5>
+        <div class="project-description">
+          <h5 class="title">leonidasesteban.com</h5>
           <p>
             Accede a más de 120 proyectos que te ayudarán a mejorar tus
             habilidades como desarrollador Front-End.
@@ -111,13 +115,13 @@
         <p>LEONIDAS ESTEBAN / COFUNDADOR Y CEO LEONIDASESTEBAN.COM</p>
       </section>
 
-      <section class="testimony">
-        <div class="testimony-img">
+      <section class="project">
+        <div class="project-img">
           <picture><img src="./img/proyecto-2.png" alt="" /></picture>
         </div>
 
-        <div class="testimony-description">
-          <h5 class="testimony-title">Marvol</h5>
+        <div class="project-description">
+          <h5 class="title">Marvol</h5>
           <p>
             Es el sitio oficial de Marvol Entertainment. Explore películas,
             personajes, cómics, programas de televisión, videos y más oficiales
@@ -141,13 +145,13 @@
         <p>JASON LOPEZ / COFUNDADOR Y CEO MARVOL</p>
       </section>
 
-      <section class="testimony">
-        <div class="testimony-img">
+      <section class="proyect">
+        <div class="proyect-img">
           <picture><img src="./img/proyecto-3.png" alt="" /></picture>
         </div>
 
-        <div class="testimony-description">
-          <h5 class="testimony-title">Netnet</h5>
+        <div class="proyect-description">
+          <h5 class="title">Netnet</h5>
           <p>
             Películas y series ilimitadas y mucho más. Disfruta donde quieras.
             Cancela cuando quieras.
@@ -169,6 +173,60 @@
         </p>
         <p>MARCO CORTEZ / NETNET</p>
       </section>
+
+      <form action="" method="POST" class="form" id="hablemos">
+        <h2 class="title">Hablemos</h2>
+        <p>
+          Si está interesado en trabajar conmigo en su próximo proyecto,
+          no dude en ponerse en contacto conmigo.
+        </p>
+        <label for="form-name">
+          <span>Nombre Completo</span>
+          <input type="text" name="form-name" id="form-name" placeholder="Juan">
+        </label>
+
+        <label for="form-email">
+          <span>Correo electronico</span>
+          <input type="email" name="form-email" id="form-email" placeholder="juan@gmail.com">
+        </label>
+
+        <label for="form-message">
+          <span>Mensaje</span>
+          <textarea name="form-message" id="form-message" cols="30" rows="10"></textarea>
+        </label>
+        <button type="submit" class="btn">Enviar Mensaje</button>
+      </form>
+
     </div>
+
+    <footer class="footer">
+      <div class="footer-logo">
+        <img
+          src="./img/logo.png"
+          alt="Logotipo de Jaume"
+          width="70"
+          height="20"
+        />
+      </div>
+      <div class="social">
+          <a href="tel:1234567890" class="btn-icon">
+            <img src="./img/icons/icon-phone.svg" class="icon-phone" />
+          </a>
+          <a href="mailto:mail@mail.com" class="btn-icon">
+            <img src="./img/icons/icon-important_mail.svg" alt="" />
+          </a>
+          <a href="https://instagram.com" target="_blank" class="btn-icon">
+            <img src="./img/icons/icon-instagram.svg" alt="" />
+          </a>
+          <a href="https://twitter.com" target="_blank" class="btn-icon">
+            <img src="./img/icons/icon-twitter_squared.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>Hecho con el ♥ de Oscar.</p>
+        <p>&nbsp; Copyright 2021 - Todos los derechos reservados.</p>
+      </div>
+    </footer>
   </body>
 </html>

@@ -27,10 +27,6 @@
   gap: 1rem;
 }
 
-.hero-social {
-  padding-block-end: 1.5rem;
-}
-
 @media screen and (min-width: 768px) {
   .hero {
     display: flex;

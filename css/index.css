@@ -5,8 +5,12 @@
 @import "./wrapper.css";
 @import "./menu.css";
 @import "./comment.css";
+@import "./title.css";
 @import "./card.css";
-@import "./testimony.css";
+@import "./project.css";
+@import "./social.css";
+@import "./form.css";
+@import "./footer.css";
 
 :root {
   --fontBase: "Poppins", sans-serif;
@@ -35,4 +39,5 @@ body {
   min-block-size: 100vh;
   font: var(--body1);
   color: var(--purple);
+  margin: 0;
 }
