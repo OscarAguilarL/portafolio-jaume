@@ -1,0 +1,19 @@
+.comment {
+  text-align: center;
+  padding-block: 40px;
+}
+
+.comment p {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 39px;
+  letter-spacing: 0.005em;
+  text-align: center;
+  margin-block-start: 1.5rem;
+}
+
+.comment h5 {
+  margin-block-start: 1.5rem;
+  font: var(--headline5);
+}
