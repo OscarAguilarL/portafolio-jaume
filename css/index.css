@@ -5,6 +5,7 @@
 @import "./wrapper.css";
 @import "./menu.css";
 @import "./comment.css";
+@import "./card.css";
 
 :root {
   --fontBase: "Poppins", sans-serif;
